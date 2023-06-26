@@ -484,14 +484,14 @@ footer {
             margin-top: 4%;
             height: fit-content;
             background-color: #252424;
-            margin-left:25%;
+            margin-left:50%;
             grid-column-start: 1;
             grid-column-end: 1;
             
             
         }
    
-    .Main_Container_img img {
+     .Main_Container_img img {
         /* I set height for my img  */
           animation: img_anim 2s infinite;
             height: 150px;
