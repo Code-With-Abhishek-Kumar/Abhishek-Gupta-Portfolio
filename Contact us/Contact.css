@@ -61,7 +61,7 @@ main {
 
 .image {
     width: fit-content;
-    margin-right: auto;
+    align-items: center;
     display: flex;
     box-shadow: 1px 1px 1px 1px;
     border-radius: 50%;
@@ -149,37 +149,44 @@ footer {
 }
 
 /* ----------------------------------------end---------------------------------------------------- */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 856px) {
 
-    /* About me and download cv hide  */
     /* nav start  */
     .nav_Container {
         display: flex;
+        position: fixed;
         background-color: #252424;
         width: 100vw;
         height: fit-content;
+        position: fixed;
+    }
+
+    /* logo */
+    .Container_logo img {
+        width: 85px;
     }
 
     .Container_logo {
-        width: 0px;
-        background-color: blue;
+        margin-bottom: 28px;
+        height: 0;
     }
 
-    .Container_logo img {
-        width: 60px;
-        margin-bottom: 8px;
-        display: inline;
+    .Container_li {
+        display: flex;
+        height: fit-content;
     }
 
-    .Container_li li {
-        font-size: 30%;
+    .Container_li ol {}
+
+    .Container_li ol li {
+        font-size: 100%;
     }
 
     .contact_us {
-        padding: 2% 7%;
         height: fit-content;
         width: 100%;
         margin: 85px 20px;
+        margin-top: 205px;
         border-radius: 4%;
         align-items: center;
         font-size: xx-large;
@@ -190,16 +197,8 @@ footer {
     .image {
         width: fit-content;
         align-items: center;
-        margin: 40px 2px;
-        box-shadow: 1px 1px 1px 1px;
-        border-radius: 50%;
-    }
-
-    .img_container {
-        margin: 0px 0px;
-        margin-left: 4%;
         display: flex;
-        align-items: center;
+        margin-bottom: 22px;
     }
 
     .image img {
@@ -215,30 +214,62 @@ footer {
 
     .info h3 {
         color: white;
-        font-size: large;
+        font-size: 70%;
+        margin-bottom: 25px;
     }
 
     .logo {
         align-items: center;
-        margin-left: 15%;
+        margin-left: 0px;
     }
 
     .logo img {}
 
     /* nav done  */
     footer {
+        flex-direction: column;
         width: 100vw;
-        height: 40vh;
     }
 
     .footer_logo {
         display: flex;
         align-items: center;
+        background-color: brown;
     }
 
-    .footer_logo img {
-        margin-left: auto;
-        margin-right: auto;
+    .footer_logo img {}
+
+    /* social media link here */
+    .Social_Media_Container {
+        display: flex;
+        margin-left: 40%;
+        margin-right: 50%;
+        margin-bottom: 20px;
+    }
+
+    .Social_Media_Container img {
+        background-color: wheat;
+        animation: logo 2s infinite;
+        display: flex;
+        align-items: center;
+        width: 45px;
+        border-radius: 52%;
+        margin-right: 10px;
+    }
+
+    @keyframes logo {
+        0% {
+            box-shadow: 1px 1px 1px 1px white;
+        }
+
+        50% {
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
+        100% {
+            box-shadow: 3px 3px 3px 3px red;
+            background-color: red;
+        }
     }
 
     .footer_txt {
@@ -256,10 +287,48 @@ footer {
         font-size: xx-small;
         margin-right: 1px;
     }
-
-    hr {
-        color: black;
-    }
 }
 
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 482px) {
+
+    /* About me and download cv hide  */
+    /* nav start  */
+    /* nav start  */
+    .nav_Container {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background-color: #252424;
+        width: 100vw;
+        height: fit-content;
+        align-items: center;
+    }
+
+    /* logo */
+    .Container_logo img {
+        width: 85px;
+    }
+
+    .Container_logo {
+        margin-bottom: 28px;
+        height: 0;
+    }
+
+    .Container_li {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .Container_li ol {
+        width: 865px;
+    }
+
+    .Container_li ol li {
+        text-align: center;
+        font-size: 10px;
+    }
+}
