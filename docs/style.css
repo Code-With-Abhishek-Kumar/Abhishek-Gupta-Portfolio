@@ -267,36 +267,18 @@ footer {
     /* nav done  */
     /* main container start  */
     .Main_Container {
-        /* adding background-color in main container  */
-        background-color: #252424;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        /* set height and width   */
-        width: 100vw;
-        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .Main_Container_text {
-        grid-column-start: 1;
-        grid-row-start: 2;
-        align-items: center;
-    }
-
-    .Main_Container_img {
-        /* I set height for my img  */
-        margin-top: 150px;
-        height: fit-content;
-        background-color: #252424;
-        margin-left: 20%;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        margin-right: 25%;
+        margin: 5% auto;
     }
 
     .Main_Container_img img {
         /* I set height for my img  */
-        height: 100%;
-        width: 100%;
+        height: 355px;
+        width: 400px;
         display: inline;
         align-items: center;
         align-self: center;
@@ -312,37 +294,63 @@ footer {
         border-radius: 50%;
     }
 
-    .Social_Media_Container_desktop img {
-        display: inline;
-        height: 50px;
-        width: 50px;
-    }
-
     /* main container text start */
     .Main_Container_text {
-        /* margin: auto auto; */
-        display: block;
-        grid-row-start: 2;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        margin: 65px 0px;
+        margin: 5 auto;
     }
 
     #Main_Container_text1 {
         color: red;
-        font-size: 140%;
+        font-size: 180%;
     }
 
     #Main_Container_text2 {
-        font-size: 150%;
+        font-size: 190%;
     }
 
     #Main_Container_text3 {
-        font-size: 125%;
+        font-size: 150%;
     }
 
     #Main_Container_text4 {
-        font-size: 80%;
+        font-size: 100%;
+    }
+
+    /* nav done  */
+    .Main_Container_img {
+        /* I set height for my img  */
+        margin-top: 100px;
+        height: fit-content;
+        background-color: #252424;
+        margin-left: 25%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .Main_Container_img img {
+        /* I set height for my img  */
+        animation: img_anim 2s infinite;
+        height: 200px;
+        width: 250px;
+        display: inline;
+        align-items: center;
+        align-self: center;
+        /* width:auto; */
+        border-radius: 50%;
+    }
+
+    @keyframes img_anim {
+        0% {
+            box-shadow: 2px 2px 1px 1px red;
+        }
+
+        20% {
+            box-shadow: 3px 3px 3px 3px yellow;
+        }
+
+        30% {
+            box-shadow: 4px 4px 4px 4px blueviolet;
+        }
     }
 
     /* Main_Container_text done   */
@@ -368,23 +376,32 @@ footer {
     }
 
     .Social_Media_Container img {
-        background-color: white;
+        background-color: wheat;
+        animation: logo 2s infinite;
         display: block;
-        width: 35px;
+        width: 38px;
         border-radius: 52%;
         margin-right: 10px;
+    }
+
+    @keyframes logo {
+        0% {
+            box-shadow: 1px 1px 1px 1px white;
+        }
+
+        50% {
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
+        100% {
+            box-shadow: 3px 3px 3px 3px white;
+        }
     }
 
     .Social_Media_Container img:hover {
         background-color: red;
         border-radius: 48%;
         box-shadow: 3px 3px 3px 3px red;
-    }
-
-    .Social_Media_Container_desktop img {
-        background-color: white;
-        border-radius: 50%;
-        margin-left: ;
     }
 
     footer {
@@ -394,12 +411,11 @@ footer {
 
     .footer_logo {
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
 
     .footer_logo img {
-        margin-left: auto;
-        margin-right: auto;
+        width: 125px;
     }
 
     .footer_txt {
@@ -465,11 +481,12 @@ footer {
     .Main_Container_img {
         /* I set height for my img  */
         margin-top: 45%;
+        margin-left: 10%;
         height: fit-content;
         background-color: #252424;
-        margin-left: 25%;
         grid-column-start: 1;
         grid-column-end: 1;
+        grid-row-start: 1;
     }
 
     .Main_Container_img img {
@@ -540,60 +557,6 @@ footer {
         margin-left: 2%;
         display: inline;
         width: fit-content;
-    }
-
-    /* Main_Container_text done   */
-    #btn_red {
-        display: inline;
-        margin-top: 25px;
-        margin-left: 6px;
-        border-radius: 12px;
-        font-size: 70%;
-        font-weight: 100;
-        font-style: italic;
-        border: 2px solid red;
-        background-color: #252424;
-        border-color: red;
-        width: 90px;
-        color: rgb(204, 188, 188);
-        height: 40px;
-    }
-
-    /* social media link here */
-    .Social_Media_Container {
-        display: flex;
-        margin-left: 40%;
-        margin-right: 50%;
-        margin-bottom: 20px;
-    }
-
-    .Social_Media_Container img {
-        background-color: wheat;
-        animation: logo 2s infinite;
-        display: block;
-        width: 35px;
-        border-radius: 52%;
-        margin-right: 10px;
-    }
-
-    @keyframes logo {
-        0% {
-            box-shadow: 1px 1px 1px 1px white;
-        }
-
-        50% {
-            box-shadow: 2px 2px 2px 2px white;
-        }
-
-        100% {
-            box-shadow: 3px 3px 3px 3px white;
-        }
-    }
-
-    .Social_Media_Container img:hover {
-        background-color: red;
-        border-radius: 48%;
-        box-shadow: 3px 3px 3px 3px red;
     }
 
     footer {
