@@ -3,45 +3,6 @@
     padding: 0;
 }
 
-/* -----------------------------------------------Nav---------------------------------------------- */
-/* nav start  */
-nav {
-    display: flex;
-    background-color: #252424;
-    width: 100vw;
-    height: 100%;
-}
-
-/* logo */
-nav img {
-    width: 120px;
-    display: inline;
-    margin-top: 3px;
-}
-
-/* logo done */
-nav ol {
-    margin-left: auto;
-    margin-top: 45px;
-    margin-right: 150px;
-    display: flex;
-}
-
-nav li {
-    display: inline;
-    padding-left: 25px;
-    font-size: x-large;
-}
-
-nav li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav li a:hover {
-    color: red;
-}
-
 main {
     background-color: #252424;
     width: 100vw;
@@ -184,37 +145,6 @@ footer {
 
 /* ----------------------------------------end---------------------------------------------------- */
 @media screen and (max-width: 856px) {
-
-    /* nav start  */
-    nav {
-        display: flex;
-        position: relative;
-        background-color: #252424;
-        align-items: center;
-        width: 100vw;
-        height: fit-content;
-        position: fixed;
-    }
-
-    /* logo */
-    nav img {
-        width: 85px;
-    }
-
-    .Container_logo {
-        margin-bottom: 28px;
-        height: 0;
-    }
-
-    nav ol {
-        display: flex;
-        height: fit-content;
-    }
-
-    nav ol li {
-        font-size: 90%;
-    }
-
     .contact_us {
         height: fit-content;
         width: 100%;
@@ -284,40 +214,5 @@ footer {
         /* font-size: small; */
         font-size: xx-small;
         margin-right: 1px;
-    }
-}
-
-@media screen and (max-width: 482px) {
-
-    /* About me and download cv hide  */
-    /* nav start  */
-    /* nav start  */
-    nav {
-        display: flex;
-        flex-direction: column;
-        background-color: #252424;
-        width: 100vw;
-        height: fit-content;
-        align-items: center;
-    }
-
-    /* logo */
-    nav img {
-        width: 80px;
-    }
-
-    nav ol {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        height: fit-content;
-        align-items: center;
-        width: 865px;
-    }
-
-    nav-down ol li {
-        text-align: center;
-        font-size: 10px;
     }
 }
