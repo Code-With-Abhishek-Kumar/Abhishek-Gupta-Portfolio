@@ -1,6 +1,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Fira+Sans+Condensed&family=Kalam:wght@700&family=Lato:ital,wght@1,700&family=Lilita+One&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Fira+Sans+Condensed&family=Kalam:wght@700&family=Lilita+One&family=Playfair+Display:ital@1&display=swap');
 
+  :root{
+    
+    --bgc: #252424;
+
+  }
+
+ 
   .flex {
       display: flex;
   }
@@ -40,6 +47,16 @@
       font-family: 'Kalam', cursive;
   }
 
+
+  .h-secondary {
+    /* font-family: 'Lilita One', cursive; */
+    /* font-family: 'Caprasimo', cursive; */
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
+    font-size: 1rem;
+    font-family: 'Kalam', cursive;
+}
+  
+
   .sec {
       padding-top: 45px;
   }
@@ -47,3 +64,15 @@
   .full-width {
       width: 100%;
   }
+
+
+  .mp14{
+    margin: 14px 14px;
+    padding: 14px 14px;
+}
+
+
+
+
+
+

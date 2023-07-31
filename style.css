@@ -18,7 +18,7 @@ html body {
 /* nav start  */
 .nav_Container {
     background-color: #252424;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 }
 
@@ -61,32 +61,30 @@ html body {
 }
 
 .Main_Container_text {
-    display: block;
     /* margin-top: 12%; */
     margin: 15% 12%;
-    width: 100%;
-    width: 385px;
+    width: 90%;
     /* margin-left: 44px; */
 }
 
 #Main_Container_text1 {
     color: red;
-    font-size: 200%;
+    font-size: 2.6rem;
 }
 
 #Main_Container_text2 {
     color: white;
-    font-size: 255%;
+    font-size: 2.6rem;
 }
 
 #Main_Container_text3 {
     color: red;
-    font-size: 160%;
+    font-size: 2.6rem;
 }
 
 #Main_Container_text4 {
     color: white;
-    font-size: large;
+    font-size: 1.2rem;
 }
 
 .Main_Container_img img {
@@ -130,12 +128,23 @@ html body {
     cursor: pointer;
 }
 
+.btn_gray {
+    display: inline;
+    flex-direction: row;
+    border-radius: 12px;
+    background-color: #851e83;
+    margin-left: 8px;
+    width: 125px;
+    color: rgb(246, 246, 246);
+    height: 50px;
+}
+
 .container {
     flex-direction: column;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    width: 100%;
+    width: 90%;
     height: 100%;
     row-gap: 4%;
     column-gap: 4%;
@@ -143,7 +152,7 @@ html body {
 }
 
 .box {
-    width: 80%;
+    width: 100%;
     background-color: #fff;
     height: 100%;
     position: relative;
@@ -157,6 +166,7 @@ html body {
 .box img {
     border-radius: 4%;
     width: 100%;
+    height: 18rem;
     display: flex;
 }
 
@@ -224,7 +234,7 @@ footer {
 }
 
 /* -----------------------------------------------end------------------------------------------------ */
-/* ___________________________________________________Mob & Tablet____________________________________________- */
+/* ___________________________________________________Mob & Tablet____________________________________________-
 .project {
     margin: 12px;
     width: 100vw;
@@ -239,223 +249,200 @@ footer {
 }
 
 /* Tablet */
+
+
+
+
+/*
+
+
+
+
+
+
+/* _______________________________________________ end _________________________________________ */
+
+
+
+
 @media screen and (max-width: 850px) {
-
     /* About me and download cv hide  */
-    /* nav start  */
-    .nav_Container {
-        background-color: #252424;
-        align-items: center;
-        height: fit-content;
-    }
-
-    .Container_logo {
-        align-items: center;
-    }
-
-    .Container_logo img {
-        width: 6rem;
-        height: 6rem;
-        margin-bottom: 8px;
-        display: inline;
-    }
-
-    .Container_li {
-        display: flex;
-        justify-content: right;
-        float: right;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .Container_li li {
-        font-size: 1rem;
-    }
-
-    /* nav done  */
-    /* main container start  */
-    .Main_Container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .Main_Container_text {
-        margin: 5% auto;
-    }
-
-    .Main_Container_img img {
-        /* I set height for my img  */
-        height: 355px;
-        width: 400px;
-        display: inline;
-        align-items: center;
-        align-self: center;
-        /* width:auto; */
-        box-shadow: 2px 2px 1px 1px red;
-        border-radius: 50%;
-    }
-
-    .Main_Container_img img:hover {
-        /* I set height for my img  */
-        display: inline;
-        box-shadow: 5px 5px 5px 5px white;
-        border-radius: 50%;
-    }
-
-    /* main container text start */
-    .Main_Container_text {
-        margin: 5 auto;
-    }
-
-    #Main_Container_text1 {
-        color: red;
-        font-size: 180%;
-    }
-
-    #Main_Container_text2 {
-        font-size: 190%;
-    }
-
-    #Main_Container_text3 {
-        font-size: 150%;
-    }
-
-    #Main_Container_text4 {
-        font-size: 100%;
-    }
-
-    /* nav done  */
-    .Main_Container_img {
-        /* I set height for my img  */
-        margin-top: 100px;
-        height: fit-content;
-        background-color: #252424;
-        margin-left: 25%;
-        grid-column-start: 1;
-        grid-row-start: 1;
-    }
-
-    .Main_Container_img img {
-        /* I set height for my img  */
-        animation: img_anim 2s infinite;
-        height: 200px;
-        width: 250px;
-        display: inline;
-        align-items: center;
-        align-self: center;
-        /* width:auto; */
-        border-radius: 50%;
-    }
-
-    @keyframes img_anim {
-        0% {
-            box-shadow: 2px 2px 1px 1px red;
-        }
-
-        20% {
-            box-shadow: 3px 3px 3px 3px yellow;
-        }
-
-        30% {
-            box-shadow: 4px 4px 4px 4px blueviolet;
-        }
-    }
-
-    /* Main_Container_text done   */
-    .btn_red {
-        display: inline;
-        margin-top: 15px;
-        margin-left: 6px;
-        border-radius: 12px;
-        border: 2px solid red;
-        background-color: #252424;
-        border-color: red;
-        width: 115px;
-        color: rgb(204, 188, 188);
-        height: 50px;
-    }
-
-    /* social media link here */
-    .Social_Media_Container {
-        display: flex;
-        margin-left: 40%;
-        margin-right: 50%;
-        margin-bottom: 20px;
-    }
-
-    .Social_Media_Container img {
-        background-color: wheat;
-        animation: logo 2s infinite;
-        display: block;
-        width: 38px;
-        border-radius: 52%;
-        margin-right: 10px;
-    }
-
-    @keyframes logo {
-        0% {
-            box-shadow: 1px 1px 1px 1px white;
-        }
-
-        50% {
-            box-shadow: 2px 2px 2px 2px white;
-        }
-
-        100% {
-            box-shadow: 3px 3px 3px 3px white;
-        }
-    }
-
-    .Social_Media_Container img:hover {
-        background-color: red;
-        border-radius: 48%;
-        box-shadow: 3px 3px 3px 3px red;
-    }
-
-    /* container  */
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        margin-top: 16%;
-    }
-
-    .box {}
-
-    .footer_logo {
-        display: flex;
-        width: 100%;
-    }
-
-    .footer_logo img {
-        width: 125px;
-    }
-
-    .footer_txt {
-        color: white;
-        display: block;
-        font-size: small;
-    }
-
-    .footer_li {
-        margin: 0;
-    }
-
-    .footer_li ol li {
-        /* font-size: small; */
-        font-size: xx-small;
-        margin-right: 1px;
-    }
-
-    hr {
-        color: black;
-    }
-
-    /* _______________________________________________ end _________________________________________ */
+/* nav start  */
+.nav_Container {
+    background-color: #252424;
+    align-items: center;
+    height: fit-content;
 }
 
+.Container_logo {
+    align-items: center;
+}
+
+.Container_logo img {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 8px;
+    display: inline;
+}
+
+.Container_li {
+    display: flex;
+    justify-content: right;
+    float: right;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Container_li li {
+    font-size: 1rem;
+}
+
+/* nav done  */
+
+.Main_Container_text {
+    margin: 5% auto;
+}
+
+.Main_Container_img img {
+    /* I set height for my img  */
+    height: 355px;
+    width: 400px;
+    display: inline;
+    align-items: center;
+    align-self: center;
+    /* width:auto; */
+  
+}
+
+
+/* main container text start */
+
+
+#Main_Container_text1 {
+    color: red;
+    font-size: 2rem;
+}
+
+#Main_Container_text2 {
+    font-size: 2rem;
+}
+
+#Main_Container_text3 {
+    font-size: 2rem;
+}
+
+#Main_Container_text4 {
+    font-size: 0.9rem;
+}
+
+
+.btn_red {
+    display: inline;
+    font-size: 0.8rem;
+    margin-top: 15px;
+    margin-left: 6px;
+    border-radius: 12px;
+    border: 2px solid red;
+    background-color: #252424;
+    border-color: red;
+    width: 95px;
+    color: rgb(204, 188, 188);
+    height: 35px;
+}
+
+
+
+/* nav done  */
+
+
+
+/* Main_Container_text done   */
+
+
+/* social media link here */
+.Social_Media_Container {
+    display: flex;
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-bottom: 20px;
+}
+
+.Social_Media_Container img {
+    background-color: wheat;
+    animation: logo 2s infinite;
+    display: block;
+    width: 38px;
+    border-radius: 52%;
+    margin-right: 10px;
+}
+
+@keyframes logo {
+    0% {
+        box-shadow: 1px 1px 1px 1px white;
+    }
+
+    50% {
+        box-shadow: 2px 2px 2px 2px white;
+    }
+
+    100% {
+        box-shadow: 3px 3px 3px 3px white;
+    }
+}
+
+.Social_Media_Container img:hover {
+    background-color: red;
+    border-radius: 48%;
+    box-shadow: 3px 3px 3px 3px red;
+}
+
+/* container  */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 16%;
+}
+
+.box {}
+
+.footer_logo {
+    display: flex;
+    width: 100%;
+}
+
+.footer_logo img {
+    width: 125px;
+}
+
+.footer_txt {
+    color: white;
+    display: block;
+    font-size: small;
+}
+
+.footer_li {
+    margin: 0;
+}
+
+.footer_li ol li {
+    /* font-size: small; */
+    font-size: xx-small;
+    margin-right: 1px;
+}
+
+hr {
+    color: black;
+} 
+
+
+
+}
+
+
+
 /* Mobile  */
-@media screen and (max-width: 482px) {
+@media screen and (max-width: 676px) {
 
     /* About me and download cv hide  */
     /* nav start  */
@@ -491,10 +478,24 @@ footer {
     }
 
     /* nav done  */
+
+    .Main_Container {
+        display: grid;
+        background-color: #252424;
+        width: 100%;
+        height: 100%;
+        align-items: end;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+  
+
+    
     .Main_Container_img {
         /* I set height for my img  */
-        margin-top: 45%;
-        margin-left: 10%;
+      
+        margin: 0 10%;
         height: fit-content;
         background-color: #252424;
         grid-column-start: 1;
@@ -504,28 +505,13 @@ footer {
 
     .Main_Container_img img {
         /* I set height for my img  */
-        animation: img_anim 2s infinite;
         height: 200px;
         width: 250px;
         display: inline;
         align-items: center;
         align-self: center;
         /* width:auto; */
-        border-radius: 50%;
-    }
 
-    @keyframes img_anim {
-        0% {
-            box-shadow: 2px 2px 1px 1px red;
-        }
-
-        20% {
-            box-shadow: 3px 3px 3px 3px yellow;
-        }
-
-        30% {
-            box-shadow: 4px 4px 4px 4px blueviolet;
-        }
     }
 
     /* main container text start */
@@ -533,8 +519,8 @@ footer {
         /* margin: auto auto; */
         grid-row-start: 2;
         grid-column-start: 1;
-        margin: 25px 0px;
-        width: 100%;
+        margin: 2% 2%;
+        width: 93%;
     }
 
     section {
@@ -545,29 +531,29 @@ footer {
     #Main_Container_text1 {
         color: red;
         width: fit-content;
-        font-size: 120%;
+        font-size: 1.5rem;
         margin-left: 2%;
         margin-top: 0px;
         display: block;
     }
 
     #Main_Container_text2 {
-        font-size: 160%;
+        font-size: 2rem;
         display: block;
         width: fit-content;
-        margin-left: 2%;
+        margin-left: 1.7%;
     }
 
     #Main_Container_text3 {
-        font-size: 110%;
+        font-size: 1.4rem;
         margin-left: 2%;
         display: block;
         width: fit-content;
     }
 
     #Main_Container_text4 {
-        font-size: x-small;
-        margin-left: 2%;
+        font-size: 0.8rem;
+        
         display: inline;
         width: fit-content;
     }
