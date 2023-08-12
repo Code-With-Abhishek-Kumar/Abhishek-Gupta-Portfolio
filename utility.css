@@ -4,6 +4,7 @@
   :root{
     
     --bgc: #252424;
+    --white:white;
 
   }
 
@@ -18,6 +19,7 @@
 
   .center {
       justify-content: center;
+      align-items: center;
   }
 
   .left {
@@ -43,7 +45,7 @@
       /* font-family: 'Lilita One', cursive; */
       /* font-family: 'Caprasimo', cursive; */
       /* font-family: 'Fira Sans Condensed', sans-serif; */
-      font-size: 2rem;
+      font-size: 3rem;
       font-family: 'Kalam', cursive;
   }
 
@@ -76,3 +78,20 @@
 
 
 
+.p-primary{
+    font-size: 1.5rem;
+}
+
+.padding2{
+    padding: 2% 2%;
+   
+}
+
+.padding1{
+    padding: 1% 1%;
+   
+}
+
+.white{
+   
+}
