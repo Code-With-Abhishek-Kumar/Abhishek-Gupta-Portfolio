@@ -178,7 +178,6 @@ html body {
 /* main_social media done  */
 /* ------------------------------------------------Footer start*/
 footer {
-    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -539,6 +538,5 @@ footer {
 
     footer {
         display: flex;
-        margin-top: 80%;
     }
 }
