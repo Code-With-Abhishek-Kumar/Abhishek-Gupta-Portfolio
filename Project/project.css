@@ -25,7 +25,7 @@
 /* logo done */
 
 
-.Container_li{
+nav ol{
    
    margin-left: auto;
    margin-top: 25px;
@@ -35,7 +35,7 @@
    
 }
 
-.Container_li li{
+nav ol li{
     display: inline;
     padding-left: 25px;
     font-size: x-large;
@@ -46,7 +46,7 @@
    
 }
 
-.Container_li li a{
+nav ol li a{
     color: white;
     text-decoration: none;
     

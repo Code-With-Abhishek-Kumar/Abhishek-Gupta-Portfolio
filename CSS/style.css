@@ -14,6 +14,10 @@ html body {
 .nav_Container {
     background-color: #252424;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
     height: fit-content;
 }
 
@@ -21,24 +25,29 @@ html body {
 .Container_logo img {
     width: 120px;
 }
+#nav_logo{
+    display: none;
+
+}
+
 
 /* logo done */
-.Container_li {
+nav ol {
     margin: 4% 4%;
 }
 
-.Container_li li {
+nav ol li{
     display: inline;
     padding-left: 25px;
     font-size: 2rem;
 }
 
-.Container_li li a {
+nav ol li a {
     color: white;
     text-decoration: none;
 }
 
-.Container_li li a:hover {
+nav ol li a:hover {
     color: red;
 }
 
@@ -257,33 +266,86 @@ footer {
     /* About me and download cv hide  */
     /* nav start  */
     .nav_Container {
-        background-color: #252424;
+        /* background-color: #252424;  */
+        background-color: black;
+        display: none;
         align-items: center;
-        height: fit-content;
+        justify-content: center;
+        height:auto;
+        position: absolute;
+        z-index: 6;
     }
 
+    #nav_li{
+        display: none;
+    }
+
+    .full-width{
+        width: 0;
+    }
+
+.mob_nav{
+    display: flex;
+    padding: 0px 12px;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    position:absolute;
+    width: 100%;
+    height: auto;
+}
+
+
+#nav_logo{
+     width: 85px;
+     display: block;
+
+}
+
+    #nav-btn{
+      color: white;
+      font-size: 20px;
+      border: 2px solid red;
+      padding: 12px 12px;
+      height: 45px;
+      top: 0;
+      align-items: center;
+    }
+
+   
+    .Main_Container {
+    position: relative;
+    padding-top: 10%;
+}
+
+
+   
     .Container_logo {
         align-items: center;
     }
 
     .Container_logo img {
-        width: 6rem;
-        height: 6rem;
-        margin-bottom: 8px;
-        display: inline;
+        display: none;
     }
-
-    .Container_li {
-        display: flex;
+nav ol  {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ align-items: center;
+      
+    }
+    nav ol{
+     
         justify-content: right;
         float: right;
         align-items: center;
+        /* display: none;  */
         margin: 0 auto;
     }
 
-    .Container_li li {
-        font-size: 1rem;
-    }
+    nav ol li {
+        font-size: 2em;
+    } 
 
     /* nav done  */
     .Main_Container_text {
@@ -419,40 +481,9 @@ footer {
 /* Mobile  */
 @media screen and (max-width: 676px) {
 
-    /* About me and download cv hide  */
-    /* nav start  */
-    .nav_Container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-    }
 
-    /* logo */
-    .Container_logo img {
-        width: 85px;
-    }
-
-    .Container_logo {
-        margin: 2rem;
-        margin-bottom: 28px;
-        height: 0;
-    }
-
-    .Container_li {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: fit-content;
-        align-items: center;
-        margin-top: 2rem;
-    }
-
-    .Container_li ol li {
-        font-size: 10px;
-    }
-
-    /* nav done  */
+   
+    
     .Main_Container {
         display: grid;
         background-color: #252424;

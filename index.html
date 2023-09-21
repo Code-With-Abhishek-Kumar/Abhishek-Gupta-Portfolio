@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blogger</title>
-    <!-- ownership  Verify start  -->
-    <meta name="google-site-verification" content="Op43qLcg4RFJ-FPJxHASKm1VB4qd6BT77ypGAA2QG9M" />
-    <!-- ownership  Verify end  -->
-    <!-- Css start  -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./utility.css">
-    <!-- Css end  -->
-    <!-- Font awesome start  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Font awesome end  -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blogger</title>
+        <!-- ownership  Verify start  -->
+        <meta name="google-site-verification"
+            content="Op43qLcg4RFJ-FPJxHASKm1VB4qd6BT77ypGAA2QG9M" />
+        <!-- ownership  Verify end  -->
+        <!-- Css start  -->
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/utility.css">
+        <!-- Css end  -->
+        <!-- Font awesome start  -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Font awesome end  -->
 
-      <!-- gsap cdn start  -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="./Animation/index.js" defer></script>
-  <!-- gsap cdn end  -->
+        <!-- gsap cdn start  -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+            integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./Animation/index.js" defer></script>
+        <!-- gsap cdn end  -->
 
-  
-    <!-- schema start  -->
-    <script type="application/ld+json">
+        <!-- schema start  -->
+        <script type="application/ld+json">
         {
           "@context": "https://schema.org/",
           "@type": "Person",
@@ -47,7 +50,7 @@
           "jobTitle": "web developer"  
         }
         </script>
-    <script type="application/ld+json">
+        <script type="application/ld+json">
     {
       "@context": "https://schema.org/", 
       "@type": "BreadcrumbList", 
@@ -64,152 +67,184 @@
       }]
     }
     </script>
-    <!-- schema end  -->
-</head>
+        <!-- schema end  -->
+    </head>
 
-<body>
-    <!-- nav start  -->
-    <nav class="nav_Container flex ">
-        <span></span>
-        <div class="Container_logo flex ">
-            <img src="./Image/logo (2).png">
-        </div>
-        <div class="Container_li full-width ">
-            <ol class="right flex">
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="./About/index.html">About</a></li>
-                <li><a href="./Project/project.html">Project</a></li>
-                <li><a href="./Contact us/contact.html">Contact us</a></li>
-                <li><a href="./Blogs/blog.html">Blogs</a></li>
+    <body>
+        <!-- JS Start  -->
+        <script src="./JS/script.js" defer></script>
+
+        <!-- JS End  -->
+
+        <!-- nav start  -->
+        <nav class="nav_Container flex ">
+
+            <span></span>
+            <div class="Container_logo flex ">
+                <img src="./Image/logo (2).png">
+            </div>
+
+            <ol id="nav_li">
+
+                <li class="nav_li"><a href="index.html">Home</a> </li>
+                <li class="nav_li"><a href="./About/index.html">About</a></li>
+                <li class="nav_li"><a href="./Project/project.html">Project</a></li>
+                <li class="nav_li"> <a href="./Contact us/contact.html">Contact
+                        us</a></li>
+                <li class="nav_li"><a href="./Blogs/blog.html">Blogs</a></li>
+
             </ol>
-        </div>
-    </nav>
-    <!-- nav end -->
-    <!-- page 1 start  -->
-    <section class="Hero sec1">
-        <main class="Main_Container">
-            <div class="Main_Container_text">
-                <h3 id="Main_Container_text1">
-                    - I am
-                </h3>
-                <h1 id="Main_Container_text2">
-                    Abhishek Gupta
-                </h1>
-                <h2 id="Main_Container_text3">
-                    Web Developer
-                </h2>
-                <p id="Main_Container_text4">
-                    We salute the coders, designers, and programmers already
-                    hard at work at their desks, and we encourage every student
-                    who can’t decide whether to take that computer science class
-                    to give it a try.
-                </p>
-                <section class="Main_Container_Button">
-                    <a href="#">
-                        <button class="btn_red">ABOUT ME</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn_red">Download CV</button>
-                    </a>
+
+            <div class="mob_nav">
+
+                <img src="./Image/logo (2).png" id="nav_logo">
+                <i class="fa-solid fa-bars" id="nav-btn"></i>
+            </div>
+
+        </nav>
+        <!-- nav end -->
+        <!-- page 1 start  -->
+        <section class="Hero sec1">
+            <main class="Main_Container">
+                <div class="Main_Container_text">
+                    <h3 id="Main_Container_text1">
+                        - I am
+                    </h3>
+                    <h1 id="Main_Container_text2">
+                        Abhishek Gupta
+                    </h1>
+                    <h2 id="Main_Container_text3">
+                        Web Developer
+                    </h2>
+                    <p id="Main_Container_text4">
+                        We salute the coders, designers, and programmers already
+                        hard at work at their desks, and we encourage every
+                        student
+                        who can’t decide whether to take that computer science
+                        class
+                        to give it a try.
+                    </p>
+                    <section class="Main_Container_Button">
+                        <a href="#">
+                            <button class="btn_red">ABOUT ME</button>
+                        </a>
+                        <a href="#">
+                            <button class="btn_red">Download CV</button>
+                        </a>
+                    </section>
+                </div>
+                <section class="Main_Container_img">
+                    <img src="./Image/full-stack-web-developer.png" alt sizes
+                        srcset id="img1">
+                    <img src="./Image/my_img.png" alt="Abhishek" id="img2">
                 </section>
-            </div>
-            <section class="Main_Container_img">
-                <img src="./Image/full-stack-web-developer.png" alt="" sizes="" srcset="" id="img1">
-                <img src="./Image/my_img.png" alt="Abhishek" id="img2">
             </section>
-    </section>
-    <!-- page 1 end  -->
-    <hr>
-    <!-- page2 start   -->
-    <section class="Service sec2 ">
-        <div class="title">
-            <h1 class="h-primary title white">Our Services</h1>
-            <br><br>
-        </div>
-        <div class="container flex">
-            <div class="box flex">
-                <img src="./Image/b621e8ac510ba0c0b3e84c9d60e19869.gif" alt="" srcset="">
-                <h3 class="flex center h-primary">Web Designer</h3>
-                <p>
-                    I will design best website for your business Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Saepe velit possimus eos consequatur numquam, in consectetur! Hic dolor dolorem doloremque,
-                    recusandae delectus, esse sunt laudantium iure natus adipisci at deleniti!
-                </p>
+            <!-- page 1 end  -->
+            <hr>
+            <!-- page2 start   -->
+            <section class="Service sec2 ">
+                <div class="title">
+                    <h1 class="h-primary title white">Our Services</h1>
+                    <br><br>
+                </div>
+                <div class="container flex">
+                    <div class="box flex">
+                        <img src="./Image/b621e8ac510ba0c0b3e84c9d60e19869.gif"
+                            alt srcset>
+                        <h3 class="flex center h-primary">Web Designer</h3>
+                        <p>
+                            I will design best website for your business Lorem
+                            ipsum dolor sit amet consectetur adipisicing
+                            elit. Saepe velit possimus eos consequatur numquam,
+                            in consectetur! Hic dolor dolorem doloremque,
+                            recusandae delectus, esse sunt laudantium iure natus
+                            adipisci at deleniti!
+                        </p>
+                    </div>
+                    <div class="box flex">
+                        <img
+                            src="https://th.bing.com/th/id/OIP.H_Ani3mPGBia67YoUiDgMgHaHa?pid=ImgDet&w=768&h=768&rs=1"
+                            alt
+                            srcset>
+                        <h3 class="flex center h-primary">UI/UX</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Corporis ab possimus deleniti, soluta
+                            totam tenetur ut dolores ex autem asperiores omnis
+                            eveniet consectetur beatae amet pariatur rem
+                            doloribus illum repellat.
+                        </p>
+                    </div>
+                    <div class="box flex">
+                        <img src="./Image/webdeveloper.gif" alt srcset>
+                        <h3 class="flex center h-primary ">Web Development</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Corporis ab possimus deleniti, soluta
+                            totam tenetur ut dolores ex autem asperiores omnis
+                            eveniet consectetur beatae amet pariatur rem
+                            doloribus illum repellat.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- page2 end  -->
+            <!-- footer start  -->
+            <footer>
+                <hr>
+                <div class="footer_logo flex center">
+                    <img src="../Image/logo (2).png" alt srcset width="70px">
+                </div>
+                <div class="footer_txt ">
+                    <p>
+                        Coding allows us to automate tasks that would otherwise
+                        be
+                        time-consuming or impossible to complete manually. This
+                        can
+                        increase efficiency and productivity in various fields,
+                        such as
+                        business, healthcare, and education.
+                    </p>
+                </div>
+                <div class="Social_Media_Container">
+                    <a href="#">
+                        <img src="../Image/instagram.png" alt srcset
+                            width="50px">
+                    </a>
+                    <a href="#">
+                        <img src="../Image/whatsapp.png" alt srcset width="50px">
+                    </a>
+                    <a href="#">
+                        <img src="../Image/github.png" alt srcset width="50px">
+                    </a>
+                </div>
             </div>
-            <div class="box flex">
-                <img src="https://th.bing.com/th/id/OIP.H_Ani3mPGBia67YoUiDgMgHaHa?pid=ImgDet&w=768&h=768&rs=1" alt=""
-                    srcset="">
-                <h3 class="flex center h-primary">UI/UX</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ab possimus deleniti, soluta
-                    totam tenetur ut dolores ex autem asperiores omnis eveniet consectetur beatae amet pariatur rem
-                    doloribus illum repellat.
-                </p>
+            <hr id="line ">
+            <div class="footer_li">
+                <h3></h3>
+                <ol>
+                    <a href="http://">
+                        <li>HOME</li>
+                    </a>
+                    <a href="http://">
+                        <li>ABOUT US</li>
+                    </a>
+                    <a href="http://">
+                        <li>COUNTACT US</li>
+                    </a>
+                    <a href="http://">
+                        <li>DISCLAMER</li>
+                    </a>
+                    <a href="http://">
+                        <li>TERM & CONDITIONS</li>
+                    </a>
+                    <a href="http://">
+                        <li>PRIVACY POLICY</li>
+                    </a>
+                </ol>
             </div>
-            <div class="box flex">
-                <img src="./Image/webdeveloper.gif" alt="" srcset="">
-                <h3 class="flex center h-primary ">Web Development</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ab possimus deleniti, soluta
-                    totam tenetur ut dolores ex autem asperiores omnis eveniet consectetur beatae amet pariatur rem
-                    doloribus illum repellat.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- page2 end  -->
-    <!-- footer start  -->
-    <footer>
-        <hr>
-        <div class="footer_logo flex center">
-            <img src="../Image/logo (2).png" alt srcset width="70px">
-        </div>
-        <div class="footer_txt ">
-            <p>
-                Coding allows us to automate tasks that would otherwise be
-                time-consuming or impossible to complete manually. This can
-                increase efficiency and productivity in various fields, such as
-                business, healthcare, and education.
-            </p>
-        </div>
-        <div class="Social_Media_Container">
-            <a href="#">
-                <img src="../Image/instagram.png" alt srcset width="50px">
-            </a>
-            <a href="#">
-                <img src="../Image/whatsapp.png" alt srcset width="50px">
-            </a>
-            <a href="#">
-                <img src="../Image/github.png" alt srcset width="50px">
-            </a>
-        </div>
-        </div>
-        <hr id="line ">
-        <div class="footer_li">
-            <h3></h3>
-            <ol>
-                <a href="http://">
-                    <li>HOME</li>
-                </a>
-                <a href="http://">
-                    <li>ABOUT US</li>
-                </a>
-                <a href="http://">
-                    <li>COUNTACT US</li>
-                </a>
-                <a href="http://">
-                    <li>DISCLAMER</li>
-                </a>
-                <a href="http://">
-                    <li>TERM & CONDITIONS</li>
-                </a>
-                <a href="http://">
-                    <li>PRIVACY POLICY</li>
-                </a>
-            </ol>
-        </div>
-    </footer>
-    <!-- footer end  -->
-</body>
+        </footer>
+        <!-- footer end  -->
+    </body>
 
 </html>

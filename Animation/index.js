@@ -1,8 +1,8 @@
 // nav start 
 
-let nav = gsap.timeline();
+var nav1 = gsap.timeline();
 
-nav.to(".Container_logo , Container_li, li", {
+nav1.to(".Container_logo , Container_li, li", {
 
     y: -20,
     duration: 2,
@@ -83,7 +83,7 @@ service.from(" .box img", {
 gsap.from(".Service .box ", {
     scrollTrigger: {
         trigger: ".h-primary  ",
-        markers: true,
+        // markers: true,
         scrollar: "body",
 
 
@@ -103,7 +103,7 @@ gsap.to(".box img", {
 
     scrollTrigger: {
         trigger: ".box ",
-        markers: true,
+        // markers: true,
         scrollar: "body",
         start: "top 60%"
 
@@ -112,7 +112,7 @@ gsap.to(".box img", {
 
     stagger: 0.3,
 
-    x: 75,
+
     duration: 1,
     smoth: 0.2,
 
