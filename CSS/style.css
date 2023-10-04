@@ -181,6 +181,9 @@ nav ol li a:hover {
 
 .Service {
     background-color: rgb(240, 240, 218);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* ------------------------------------------------end ----------------------------------------------- */
