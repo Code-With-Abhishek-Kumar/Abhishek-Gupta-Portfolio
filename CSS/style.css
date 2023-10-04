@@ -248,6 +248,12 @@ footer {
     display: none;
 }
 
+
+/* about  page */
+
+
+
+
 /* -----------------------------------------------end------------------------------------------------ */
 /* ___________________________________________________Mob & Tablet____________________________________________-
 .project {
@@ -486,6 +492,26 @@ nav ol  {
     hr {
         color: black;
     }
+
+
+    /* aboutme page */
+
+    #aboutme{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #about-right {
+        display: flex;
+        background-color: #851e83;
+        align-items: center;
+    }
+
+    #about-right>img{
+        margin: 70px;
+        height: 80%;
+        width: 80%;
+    }
 }
 
 /* Mobile  */
@@ -581,3 +607,4 @@ nav ol  {
         display: flex;
     }
 }
+
