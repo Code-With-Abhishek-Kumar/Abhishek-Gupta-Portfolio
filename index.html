@@ -11,28 +11,15 @@
             content="Op43qLcg4RFJ-FPJxHASKm1VB4qd6BT77ypGAA2QG9M" />
         <!-- ownership  Verify end  -->
         <!-- Css start  -->
-        <link rel="stylesheet" href="./CSS/style.css">
-        <link rel="stylesheet" href="./CSS/utility.css">
+        <link rel="stylesheet" href="./Assets/CSS/style.css">
+        <link rel="stylesheet" href="./Assets/CSS/utility.css">
         <!-- Css end  -->
-        <!-- Font awesome start  -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Font awesome end  -->
 
-        <!-- gsap cdn start  -->
         <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-            integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./Animation/index.js" defer></script>
-        <!-- gsap cdn end  -->
-
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <!-- schema start  -->
         <script type="application/ld+json">
         {
@@ -71,89 +58,103 @@
     </head>
 
     <body>
-        <!-- JS Start  -->
-        <script src="./JS/script.js" defer></script>
+        <div id="cdn">
 
-        <!-- JS End  -->
+            <!-- Font awesome start  -->
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!-- Font awesome end  -->
+
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+                integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+                integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <!-- gsap cdn end  -->
+
+        </div>
+        <!-- gsap cdn start  -->
 
         <!-- nav start  -->
-        <nav class="nav_Container flex ">
 
-            <span></span>
-            <div class="Container_logo flex ">
-                <img src="./Image/logo (2).webp">
-            </div>
-
-            <ol id="nav_li">
-
-                <li class="nav_li"><a href="index.html">Home</a> </li>
-                <li class="nav_li"><a href="./About/index.html">About</a></li>
-                <li class="nav_li"><a href="./Project/project.html">Project</a></li>
-                <li class="nav_li"> <a href="./Contact us/contact.html">Contact
-                        us</a></li>
-                <li class="nav_li"><a href="./Blogs/blog.html">Blogs</a></li>
-
-            </ol>
-
-            <div class="mob_nav">
-
-                <img src="./Image/logo (2).webp" id="nav_logo">
-                <i class="fa-solid fa-bars" id="nav-btn"></i>
-            </div>
-
-        </nav>
+        <nav></nav>
         <!-- nav end -->
-        <!-- page 1 start  -->
-        <section class="Hero sec1">
-            <main class="Main_Container">
-                <div class="Main_Container_text">
-                    <h3 id="Main_Container_text1">
-                        - I am
-                    </h3>
-                    <h1 id="Main_Container_text2">
-                        Abhishek Kumar
-                    </h1>
-                    <h2 id="Main_Container_text3">
-                        Web Developer
-                    </h2>
-                    <p id="Main_Container_text4">
-                        We salute the coders, designers, and programmers already
-                        hard at work at their desks, and we encourage every
-                        student
-                        who can’t decide whether to take that computer science
-                        class
-                        to give it a try.
-                    </p>
-                    <section class="Main_Container_Button">
-                        <a href="./About/index.html">
-                            <button class="btn_red">ABOUT ME</button>
-                        </a>
-                       <a href="./Image/ABHISHEK RESUME WORD (copy).docx" download >
-                            <button class="btn_red">Download CV</button>
-                        </a>
-                    </section>
-                </div>
-                <section class="Main_Container_img">
-                    <img src="./Image/aboutme.webp" alt sizes
-                        srcset id="img1">
-                    <img src="./Image/my_img.webp" alt="Abhishek" id="img2">
-                </section>
-            </section>
-            <!-- page 1 end  -->
-            <hr>
-            <!-- page2 start   -->
-            <section class="Service sec2 ">
 
-                <div class="title">
-                    <h1 class="h-primary title white">Our Services</h1>
-                    <br><br>
-                </div>
-                <div class="container flex">
-                    <div class="box flex">
-                        <img src="./Image/b621e8ac510ba0c0b3e84c9d60e19869.gif"
-                            alt srcset>
-                        <h3 class="flex center h-primary">Web Designer</h3>
-                        <!-- <p>
+        <div id="page1">
+            <video src="./Assets/Video/code-fi lofi beats to code relax to.webm"
+            muted    autoplay loop></video>
+        </div>
+        <!-- page 2 start  -->
+
+        <div id="page-2">
+            <section class="Hero sec1">
+                <main class="Main_Container">
+                    <div class="Main_Container_text">
+                        <h3 id="Main_Container_text1">
+                            - I am
+                        </h3>
+                        <h1 id="Main_Container_text2">
+                            Abhishek Kumar
+                        </h1>
+                        <h2 id="Main_Container_text3">
+                            Web Developer
+                        </h2>
+                        <p id="Main_Container_text4">
+                            We salute the coders, designers, and programmers
+                            already
+                            hard at work at their desks, and we encourage every
+                            student
+                            who can’t decide whether to take that computer
+                            science
+                            class
+                            to give it a try.
+                        </p>
+                        <section class="Main_Container_Button">
+                            <a href="./About/index.html">
+                                <button class="btn_red">ABOUT ME</button>
+                            </a>
+                            <a href="./Image/ABHISHEK RESUME WORD (copy).docx"
+                                download>
+                                <button class="btn_red">Download CV</button>
+                            </a>
+                        </section>
+                    </div>
+                    <section class="Main_Container_img">
+                        <img src="./Assets/Image/aboutme.webp" alt sizes
+                            srcset id="img1">
+                        <img src="./Assets/Image/my_img.webp" alt="Abhishek"
+                            id="img2">
+                    </section>
+                </section>
+
+            </div>
+            <!-- page 2 end  -->
+
+            <hr>
+
+            <!-- page 3 start  -->
+
+            <div id="page-3">
+                <!-- page2 start   -->
+                <section class="Service sec2 ">
+
+                    <div class="title">
+                        <h1 class="h-primary title white">Our Services</h1>
+                        <br><br>
+                    </div>
+                    <div class="container flex">
+                        <div class="box flex">
+                            <img
+                                src="./Assets/Image/webdeveloper.gif"
+                                alt srcset>
+                            <h3 class="flex center h-primary">Web Designer</h3>
+                            <!-- <p>
                             I will design best website for your business Lorem
                             ipsum dolor sit amet consectetur adipisicing
                             elit. Saepe velit possimus eos consequatur numquam,
@@ -161,36 +162,39 @@
                             recusandae delectus, esse sunt laudantium iure natus
                             adipisci at deleniti!
                         </p> -->
-                    </div>
-                    <div class="box flex">
-                        <img
-                            src="https://assets.materialup.com/uploads/8416ff3b-d63d-40d3-8505-cb81ea5fa73a/preview.gif"
-                            alt
-                            srcset>
-                        <h3 class="flex center h-primary">UI/UX</h3>
-                        <!-- <p>
+                        </div>
+                        <div class="box flex">
+                            <img
+                                src="https://assets.materialup.com/uploads/8416ff3b-d63d-40d3-8505-cb81ea5fa73a/preview.gif"
+                                alt
+                                srcset>
+                            <h3 class="flex center h-primary">UI/UX</h3>
+                            <!-- <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Corporis ab possimus deleniti, soluta
                             totam tenetur ut dolores ex autem asperiores omnis
                             eveniet consectetur beatae amet pariatur rem
                             doloribus illum repellat.
                         </p> -->
-                    </div>
-                    <div class="box flex">
-                        <img src="./Image/webdeveloper.gif" alt srcset>
-                        <h3 class="flex center h-primary ">Web Development</h3>
-                        <!-- <p>
+                        </div>
+                        <div class="box flex">
+                            <img src="./Assets/Image/webdeveloper.gif" alt
+                                srcset>
+                            <h3 class="flex center h-primary ">Web Development</h3>
+                            <!-- <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Corporis ab possimus deleniti, soluta
                             totam tenetur ut dolores ex autem asperiores omnis
                             eveniet consectetur beatae amet pariatur rem
                             doloribus illum repellat.
                         </p> -->
+                        </div>
                     </div>
-                </div>
-            </section>
-            <!-- page2 end  -->
+                </section>
+                <!-- page2 end  -->
 
+            </div>
+            <!-- page 3 end  -->
 
             <!-- <section id="page3"></section> -->
             <!-- footer start  -->
@@ -249,6 +253,15 @@
             </div>
         </footer>
         <!-- footer end  -->
+        <script src="./Assets/Animation/index.js" defer></script>
     </body>
+
+    <script>
+  $(function () {
+       $("nav").load("./Assets/Components/nav.html");
+       
+   
+  });
+</script>
 
 </html>
