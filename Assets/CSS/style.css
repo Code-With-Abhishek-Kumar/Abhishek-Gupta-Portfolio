@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* z-index: 0; */
 }
 
 html,
@@ -30,7 +31,7 @@ main {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  opacity: 0.8;
 }
 
 #page1 .first-layer {
@@ -44,9 +45,8 @@ main {
 }
 
 #page1 .first-layer h1 {
-  /* position: relative; */
-  mix-blend-mode: difference;
-  z-index: 4;
+  position: relative;
+
   line-height: 2;
 }
 
@@ -61,10 +61,9 @@ main {
 #page2 {
   display: flex;
   width: 100%;
-  height: 160vh;
+  height: 100vh;
   flex-direction: column;
   position: relative;
-  /* background-color: rgb(31, 29, 28); */
 }
 
 .about {
@@ -74,13 +73,12 @@ main {
   width: 100%;
   height: 12vh;
   font-size: 2rem;
-  z-index: 4;
-  transition: all ease-in 0.2;
   position: absolute;
   top: 88%;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 }
 
 #about-me {
@@ -89,10 +87,9 @@ main {
   padding: 65px 0px;
   display: flex;
   justify-content: center;
-  background: url(../Image/Aboutbg2.png),
-    rgb(27, 24, 24) 0% 0% / 80px 80px repeat;
-
+  z-index: 1;
   display: flex;
+  background: transparent;
 }
 #page2 .left {
   width: 25vw;
@@ -100,7 +97,7 @@ main {
   align-items: center;
 
   justify-content: center;
-  /* background-color: aqua; */
+  /* background-color: ; */
   height: 100%;
 }
 
@@ -126,7 +123,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: blueviolet; */
 }
 
 #page2 .bootom {
@@ -134,7 +130,6 @@ main {
   height: 100%;
   font-size: 2rem;
 
-  /* background-color: brown; */
   color: white;
   display: flex;
   align-items: center;
@@ -145,6 +140,7 @@ main {
 #page2 .bootom p {
   margin: 12px 35px;
   text-transform: lowercase;
+  /* z-index: 1; */
 }
 
 .container {
@@ -157,11 +153,23 @@ main {
 #page3 {
   width: 100%;
   height: 200vh;
-  background-color: #0b0202;
+  padding: 65px 0px;
+}
+
+#page3 h3 {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+  width: 95%;
+  line-height: 0.8;
+
+  font-family: Futura;
+  mix-blend-mode: difference;
+  -webkit-text-stroke: 2px rgb(229, 221, 221);
 }
 
 .img-container {
-  height: 30vh;
+  height: 50vh;
   position: relative;
   display: flex;
   border: 4px solid white;
@@ -171,21 +179,58 @@ main {
 }
 
 .img-container img {
-  width: 350px;
+  width: 500px;
   height: 100%;
   position: absolute;
-  border-radius: 45%;
+
   object-position: center;
   object-fit: cover;
-z-index: 3;
-  mix-blend-mode: difference;
-  transition: all ease-in 0.8;
 }
 
 .img-container h3 {
   color: white;
   font-size: 5rem;
-  z-index: 2;
+  width: 95%;
+
   position: absolute;
+  font-family: Futura;
   mix-blend-mode: difference;
+  -webkit-text-stroke: 2px rgb(229, 221, 221);
+}
+
+#page4 {
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  gap: 65px;
+  flex-direction: column;
+  position: relative;
+  padding: 0px 65px;
+}
+
+#page4 div {
+  /* position: absolute; */
+  /* transform: translate(-50% , -50%); */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  font-size: 3rem;
+}
+
+#page4 div h5 {
+  font-size: 2.2rem;
+  padding: 35px 35px;
+  background-color: #34ac20;
+  border-radius: 20px;
+  color: white;
+}
+#page4 span {
+  display: block;
+  font-size: 8rem;
+
+  color: white;
+  font-style: normal;
+  font-weight: 800;
 }

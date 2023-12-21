@@ -12,12 +12,7 @@ document.querySelector('main').addEventListener('mousemove', function (dets) {
 
     })
 
-    gsap.to("#blur", {
-        left: dets.x + "px",
-        top: dets.y + "px",
 
-
-    })
 })
 
 
@@ -62,83 +57,185 @@ function Locomotive() {
 Locomotive();
 
 
-let img = [
-    {
-        img: "./Assets/Image/Img1.png",
 
-    },
-    {
-        img: "./Assets/Image/Img2.png",
-
-    },
-    {
-        img: "./Assets/Image/Img3.png",
-
-    }
-
-]
-
-function image() {
-
-    let clutter = "";
+// let images = document.querySelectorAll('.img-container');
 
 
-    img.forEach(function (dets, a) {
+// images.forEach(function (val) {
+
+//     val.addEventListener('mousemove', function (dets) {
+//         val.childNodes[3].style.left = dets.x + "px";
+//         // gsap.to(cursor, {
+//         //     display: "none",
+//         // })
+
+//         // gsap.to("#blur", {
+//         //     display: "none",
+//         // })
 
 
-        clutter += `
-    <div class="img-container">
-                    <h3>Image</h3>
-                    <img id=${a} src=${dets.img} alt srcset >
-
-                </div>
-                `
-
+//     });
+//     val.addEventListener('mouseenter', function (dets) {
+//         // val.childNodes[3].style.opacity = 1;
+//         // cursor.style.opacity = 0;
+//         val.style.backgroundColor = "white";
+//         val.style.border = "2px solid black";
 
 
-    })
+//     });
 
-    document.getElementById('page3').innerHTML = clutter;
+//     val.addEventListener('mouseout', function (dets) {
+
+//         val.childNodes[3].style.left = "0px";
+//         val.style.backgroundColor = "black";
+
+//         val.style.border = "2px solid white";
 
 
 
-    let images = document.querySelectorAll('.img-container');
+
+//     })
+// })
 
 
-    images.forEach(function (val) {
-
-        val.addEventListener('mousemove', function (dets) {
-            val.childNodes[3].style.left = dets.x + "px";
-            // gsap.to(cursor, {
-            //     display: "none",
-            // })
-
-            // gsap.to("#blur", {
-            //     display: "none",
-            // })
-
-        });
-        val.addEventListener('mousein', function (dets) {
-            // val.childNodes[3].style.opacity = 1;
-            // cursor.style.opacity = 0;
-            val.style.backgroundColor = "red";
 
 
-        });
 
-        val.addEventListener('mouseout', function (dets) {
 
-            val.style.backgroundColor = "black";
-            val.childNodes[3].style.left = "0px";
+
+function page1Anim() {
+
+    document.querySelector('#page1 .first-layer h1').addEventListener('mousemove', function (dets) {
+
+        // alert("Ffff")
+        gsap.to('#blur', {
+
+
+            // mixBlendMode: "normal",
+            // opacity: 1,
+
+
+            left: dets.x + "px",
+            top: dets.y + "px",
+
+
 
 
 
         })
+
+
+    })
+
+
+    document.querySelector('#page1 .first-layer h1').addEventListener('mouseenter', function (d) {
+
+        // alert("Ffff")
+        gsap.to('#blur', {
+
+
+            // mixBlendMode: "normal",
+            // opacity: 1,
+            display: "block",
+
+            // left: dets.x + "px",
+            // top: dets.y + "px",
+            // transition: "all ease-in 0.1",
+
+
+
+
+        })
+
+        gsap.to(cursor, {
+
+
+
+            display: "none",
+            backgroundColor: "transparent",
+
+
+
+
+
+        })
+
+
     })
 
 
 
+    document.querySelector('#page1 .first-layer h1').addEventListener('mouseout', function () {
+
+        // alert("Ffff")
+        gsap.to('#blur', {
+            display: "none",
+
+
+
+
+
+
+        })
+
+        gsap.to(cursor, {
+
+            // display: "block",
+            backgroundColor: "rgb(7, 240, 7)",
+
+
+        })
+
+
+
+
+
+
+    })
+
+    document.querySelector('#page1').addEventListener('mouseenter', function (d) {
+
+        gsap.to(cursor, {
+            display: "none",
+
+
+
+        })
+
+
+    })
 }
 
-image();
+
+page1Anim();
+
+
+function page2Anim() {
+
+
+    document.querySelector('#page2').addEventListener('mouseenter', function (d) {
+
+
+
+        gsap.to(cursor, {
+
+
+
+            display: "block",
+
+
+
+
+
+
+        })
+
+
+    })
+
+}
+
+
+page2Anim()
+
 

@@ -20,35 +20,58 @@
 }
 
 #cursor {
-  width: 65px;
+  width: 35px;
   border-radius: 50%;
-  height: 65px;
+  height: 35px;
   background-color: rgb(7, 240, 7);
-  position: absolute;
+ 
+  position: fixed;
   z-index: 3;
   /* transition: all ease-in-out 0.5; */
+  display: none;
   opacity: 0.8;
+  /* transform: translate(-10% , -50%); */
 }
 
 #blur {
   width: 165px;
   border-radius: 50%;
   height: 165px;
+  /* mix-blend-mode:normal; */
+  mix-blend-mode: difference;
+  color: black;
   /* transition: all ease-in-out 0.5; */
-  background-color: rgb(25, 218, 25);
-  position: fixed;
-  z-index: 3;
-  opacity: 0.5;
+  background-color: rgb(236, 231, 231);
+  position:fixed;
+  display: none;
+  z-index: 5;
+
+  opacity: 1;
+  transform: translate(-50% , -50%);
 }
 
 .flex {
   display: flex;
 }
 
+.acenter{
+  align-items: center;
+}
 .f-row {
   flex-direction: row;
 }
 
 .f-col {
   flex-direction: column;
+}
+
+.right0 {
+  right: 0;
+  
+
+}
+
+
+.left0{
+  left: 0%;
 }

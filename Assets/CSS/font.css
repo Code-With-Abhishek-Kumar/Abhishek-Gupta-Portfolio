@@ -2,3 +2,9 @@
   font-family: Futura;
   src: url(../Fonts/Futura-Bold.ttf);
 }
+
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../Fonts/HelveticaNowText-Regular.ttf);
+}
