@@ -9,10 +9,16 @@
         <link rel="stylesheet" href="./Assets/CSS/font.css">
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
         <title>Document</title>
     </head>
     <body>
-
         <nav></nav>
 
         <div id="cursor"></div>
@@ -20,7 +26,7 @@
             <div id="page1" class>
                 <div id="blur"></div>
                 <div class="first-layer">
-                    <h1>Eat . drink . COde</h1>
+                    <h2>Eat . drink . COde</h2>
 
                 </div>
                 <div class="second-layer">
@@ -97,6 +103,15 @@
                 <span>linkedin</span>
             </div>
         </main>
+
+        <script>
+    $(function(){
+  $("nav").load("./Components/nav.html");
+
+});
+
+</script>
+
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
             integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="

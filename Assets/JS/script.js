@@ -105,7 +105,7 @@ Locomotive();
 
 function page1Anim() {
 
-    document.querySelector('#page1 .first-layer h1').addEventListener('mousemove', function (dets) {
+    document.querySelector('#page1 .first-layer h2').addEventListener('mousemove', function (dets) {
 
         // alert("Ffff")
         gsap.to('#blur', {
@@ -122,13 +122,14 @@ function page1Anim() {
 
 
 
+
         })
 
 
     })
 
 
-    document.querySelector('#page1 .first-layer h1').addEventListener('mouseenter', function (d) {
+    document.querySelector('#page1 .first-layer h2').addEventListener('mouseenter', function (d) {
 
         // alert("Ffff")
         gsap.to('#blur', {
@@ -165,7 +166,7 @@ function page1Anim() {
 
 
 
-    document.querySelector('#page1 .first-layer h1').addEventListener('mouseout', function () {
+    document.querySelector('#page1 .first-layer h2').addEventListener('mouseout', function () {
 
         // alert("Ffff")
         gsap.to('#blur', {
