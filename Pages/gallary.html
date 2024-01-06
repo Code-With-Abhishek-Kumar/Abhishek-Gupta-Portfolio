@@ -5,18 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <title>og.galary</title>
+    <!-- Css start  -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../Assets/CSS/style2.css">
+    <link rel="stylesheet" href="../Assets/CSS/font.css">
+
+    <!-- Css end  -->
+    <!-- cdn start -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="../CSS/style2.css">
+    <!-- cdn start -->
+
+    <!-- Swiper js  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <nav></nav>
     <hr>
     <main>
+      <div id="page1">
+        <!-- <h2>My</h2> -->
+        <h2 data-scroll data-scroll-speed="-3">Gallary</h2>
+
+        <div id="Page1_img" data-scroll data-scroll-speed="1">
+             <img src="../Assets/Image/Img2.png"
+                data-scroll data-scroll-speed="1"
+                alt></div>
+        </div>
+
+
+      </div>
+
+     
+
+
+      <div id="page2">
+
+
+        
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+      <div class="swiper-slide">
+   <img src="../Assets/Image/Slide2.png"
+                
+                alt>
+      </div>
+      <div class="swiper-slide">
+          <img src="../Assets/Image/Slide3.jpg"
+                
+                alt>
+      </div>
+      <div class="swiper-slide">
+        <img src="../Assets/Image/Slide4.jpg" alt="" srcset="">
+      </div>
+      <div class="swiper-slide">
+         <img src="../Assets/Image/Slide5.png" alt="" srcset="">
+
+      </div>
+      <div class="swiper-slide">
+          <img src="../Assets/Image/Slide6.jpg" alt="" srcset="">
+      </div>
+      <div class="swiper-slide">
+         <img src="../Assets/Image/Slide7.png" alt="" srcset="">
+
+      </div>
+      <div class="swiper-slide">
+         <img src="../Assets/Image/Slide8.png" alt="" srcset="">
+      </div>
+      <div class="swiper-slide">
+         <img src="../Assets/Image/Slide9.png" alt="" srcset="">
+      </div>
+      <div class="swiper-slide"> <img src="../Assets/Image/Slide10.png" alt="" srcset=""></div>
+    </div>
+
+    <div class="swiper-slide"> <img src="../Assets/Image/Slide11.jpg" alt="" srcset=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+        <script>
+
+           var swiper = new Swiper(".mySwiper", {
+           slidesPerView: 3,
+           spaceBetween: 40,
+            grabCursor: true,
+             nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+             pagination: {
+           el: ".swiper-pagination",
+            clickable: true,
+
+          },
+
+              autoplay: {
+        delay: 2500,
+        loop: true,
+     
+    }
+      
+    });
+
+
+         
+     
+   
+
+
+
+        </script>
+
+      </div>
 
     </main>
   </body>
@@ -26,10 +134,20 @@
   $("nav").load("../Components/nav.html");
  
 });
-
 </script>
+  <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+            integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+            integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="../Assets/JS/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script src="../JS/script2.js"></script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 </html>
