@@ -1,0 +1,46 @@
+nav {
+    width: 100vw;
+    height: 12vh;
+    background-color: #100202;
+    position: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 8;
+  }
+  
+  #left-nav {
+    padding: 0px 20px;
+    font-size: 0.8rem;
+    line-height: 2.6vh;
+  
+  }
+  #left-nav h1{
+   
+  
+  }
+  #left-nav h2{
+   color: #34ac20;
+   margin-left: 18px;
+  
+  }
+  nav ol{
+      display: flex;
+      gap: 25px;
+  
+  }
+  
+  nav ol li{
+      display: inline;
+  
+  }
+  
+  
+  nav ol li a{
+      text-decoration: none;
+      color: red;
+     
+  
+  }
+  
