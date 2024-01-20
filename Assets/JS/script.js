@@ -43,10 +43,14 @@ Locomotive();
 
 
 var typed = new Typed('#typed', {
-    strings: ['Abhishek Gupta', 'Web Developer', 'UI/Ux Designer', 'Ethical Hacker'],
+    strings: ['Abhishek Gupta', 'Web Developer', 'UI/UX Designer', 'Ethical Hacker'],
     typeSpeed: 80,
     smartBackspace: true,
     backSpeed: 50,
    
     loop:true,
 });
+
+document.addEventListener('contextmenu' , function(dets){
+    dets.preventDefault()
+})

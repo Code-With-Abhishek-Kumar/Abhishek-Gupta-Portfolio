@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+
   color: white;
   /* font-family: Futura; */
   /* z-index: 0; */
@@ -18,9 +19,9 @@ body {
 
 
 main {
-  width: 100vw;
+
   background-color: #0c0a0a;
-  position: relative;
+
 }
 
 #cursor {
@@ -108,6 +109,7 @@ main {
 #page1 .left #text span {
   color: red;
 }
+
 #page1 .right {
   width: 50%;
   display: flex;
@@ -149,6 +151,7 @@ main {
   display: flex;
   background: transparent;
 }
+
 #page2 .left {
   width: 25vw;
   display: flex;
@@ -213,7 +216,8 @@ main {
 
 #page3 {
   width: 100%;
-  height: 200vh;
+  height: 160vh;
+  position: relative;
   padding: 65px 0px;
 }
 
@@ -260,38 +264,215 @@ main {
 }
 
 #page4 {
-  height: 150vh;
+  height: 80vh;
+  font-family: Helvetica;
   width: 100%;
   display: flex;
   gap: 65px;
-  flex-direction: column;
   position: relative;
-  padding: 0px 65px;
+
 }
 
-#page4 div {
-  /* position: absolute; */
-  /* transform: translate(-50% , -50%); */
+#page4 h5 {
+  margin: 12px 0px;
+
+}
+
+
+
+#page4 .right h2 {
+  font-size: 2rem;
+  margin: 15px 0px;
+  position: relative;
+
+}
+
+#page4 .right h2::after {
+  position: absolute;
+  top: 0;
+  left: -2%;
+  content: "";
+  width: 2px;
+  background-color: #ce0b0b;
+  height: 79px;
+}
+
+
+#page4 .left {
+  width: 50%;
+  height: 96%;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 65px;
   display: flex;
-  font-size: 3rem;
+  justify-content: start;
 }
 
-#page4 div h5 {
-  font-size: 2.2rem;
-  padding: 35px 35px;
-  background-color: #34ac20;
-  border-radius: 20px;
+#page4 .right {
+
+  height: 100%;
+  display: flex;
+
+  margin-left: 10%;
+  justify-content: center;
+  flex-direction: column;
   color: white;
 }
-#page4 span {
-  display: block;
-  font-size: 8rem;
 
-  color: white;
-  font-style: normal;
-  font-weight: 800;
+
+#page4 video {
+  height: 125px;
+  width: 100%;
+  object-fit:contain;
+ border-radius: 50%;
+ /* display: none; */
+
+}
+
+
+#skill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#skill-container .myskill {
+  background-color: rgb(7, 240, 7);
+  width: 400px;
+  height: 20px;
+  display: flex;
+}
+
+#skill-container .skill-range {
+  display: flex;
+  height: 100%;
+  justify-content: end;
+  background-color: red;
+}
+
+
+#page5 {
+  height: 200vh;
+  position: relative;
+
+  width: 100%;
+  /* background-color: #ce0b0b; */
+}
+
+
+#page5 .left,
+.right {
+  width: 50%;
+  height: 100%;
+}
+
+#page5 .left {
+  display: flex;
+  align-items: center;
+}
+
+#page5 .right {
+  display: flex;
+ justify-content: end;
+
+
+ align-self: start;
+}
+
+#page5 .right span{
+  display: flex;
+  margin-top: 5%;
+  margin-right: 5%;
+  flex-direction: column;
+
+}
+
+#page5 .right span h3{
+ 
+  font-size: 1.5rem;
+}
+
+#page5 .right span p{
+ 
+  font-size: 1rem;
+  text-align: right;
+}
+
+
+#page5 .left h2 {
+  margin-left: 5vw;
+  font-family: Futura;
+  position: relative;
+}
+
+#page5 .left h2::after {
+  position: absolute;
+  content: "";
+  left: -10%;
+  top: -5%;
+  height: 34px;
+  width: 4px;
+  background-color: rgb(64, 205, 64);
+
+}
+
+#page5 .top {
+  display: flex;
+  margin-left: 5%;
+  justify-content: space-between;
+  width: 90%;
+  align-items: end;
+
+
+  margin-bottom: 1px;
+  /* border-bottom: 1.5px solid white; */
+  /* background-color: rgb(186, 137, 11); */
+  height: 5%;
+}
+
+.myachivement {
+  height: 40vh;
+  display: flex;
+  border-top:2px solid white ;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid white;
+
+}
+
+#page5 .top h2 {
+  position: relative;
+  font-size: 2rem;
+
+}
+
+#page5 .top h2::after {
+  position: absolute;
+  content: "";
+  left: -10%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#image {
+  width: 35vw;
+  background-image: url('../Image/Hacking.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: 2;
+  position: fixed;
+  left: 40%;
+  top: 20%;
+  display: none;
+  background-color: transparent;
+  height: 60vh;
 }
