@@ -51,6 +51,6 @@ var typed = new Typed('#typed', {
     loop:true,
 });
 
-document.addEventListener('contextmenu' , function(dets){
-    dets.preventDefault()
-})
+// document.addEventListener('contextmenu' , function(dets){
+//     dets.preventDefault()
+// })

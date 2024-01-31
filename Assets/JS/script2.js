@@ -38,8 +38,9 @@ function Locomotive() {
 Locomotive();
 
 
-
-
-
+let as = document.querySelectorAll('.img-container');
+as.forEach(function(e){
+    console.log(e.childNodes(2))
+})
 
 

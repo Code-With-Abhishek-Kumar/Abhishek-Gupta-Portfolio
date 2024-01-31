@@ -1,154 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <title>og.galary</title>
-    <!-- Css start  -->
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <title>og.galary</title>
+  <!-- Css start  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../Assets/CSS/commonStyle.css">
-    <link rel="stylesheet" href="../Assets/CSS/style2.css">
-    <link rel="stylesheet" href="../Assets/CSS/font.css">
+  <link rel="stylesheet" href="../Assets/CSS/style2.css">
+  <link rel="stylesheet" href="../Assets/CSS/font.css">
 
-    <!-- Css end  -->
-    <!-- cdn start -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <!-- cdn start -->
+  <!-- Css end  -->
+  <!-- cdn start -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- cdn start -->
 
-    <!-- Swiper js  -->
+  <!-- Swiper js  -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </head>
-  <body>
-    <nav></nav>
-    <hr>
-    <main>
-      <div id="page1">
-        <!-- <h2>My</h2> -->
-        <h2 data-scroll data-scroll-speed="-3">Gallary</h2>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <nav></nav>
+  <hr>
+  <main>
+    <div id="page1">
+      <!-- <h2>My</h2> -->
+      <h3 data-scroll data-scroll-speed="-3">Gallary</h2>
 
         <div id="Page1_img" data-scroll data-scroll-speed="1">
-             <img src="../Assets/Image/img2.png"
-                data-scroll data-scroll-speed="1"
-                alt></div>
+          <img src="../Assets/Image/img2.png" data-scroll data-scroll-speed="1" alt>
         </div>
-
-
-      </div>
-
-     
-
-
-      <div id="page2">
-
-
-        
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-      <div class="swiper-slide">
-   <img src="../Assets/Image/Slide2.png"
-                
-                alt>
-      </div>
-      <div class="swiper-slide">
-          <img src="../Assets/Image/Slide3.jpg"
-                
-                alt>
-      </div>
-      <div class="swiper-slide">
-        <img src="../Assets/Image/Slide4.jpg" alt="" srcset="">
-      </div>
-      <div class="swiper-slide">
-         <img src="../Assets/Image/Slide5.png" alt="" srcset="">
-
-      </div>
-      <div class="swiper-slide">
-          <img src="../Assets/Image/Slide6.jpg" alt="" srcset="">
-      </div>
-      <div class="swiper-slide">
-         <img src="../Assets/Image/Slide7.png" alt="" srcset="">
-
-      </div>
-      <div class="swiper-slide">
-         <img src="../Assets/Image/Slide8.png" alt="" srcset="">
-      </div>
-      <div class="swiper-slide">
-         <img src="../Assets/Image/Slide9.png" alt="" srcset="">
-      </div>
-      <div class="swiper-slide"> <img src="../Assets/Image/Slide10.png" alt="" srcset=""></div>
     </div>
 
-    <div class="swiper-slide"> <img src="../Assets/Image/Slide11.jpg" alt="" srcset=""></div>
+
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
-        <script>
-
-           var swiper = new Swiper(".mySwiper", {
-           slidesPerView: 3,
-           spaceBetween: 40,
-            grabCursor: true,
-             nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-             pagination: {
-           el: ".swiper-pagination",
-            clickable: true,
-
-          },
-
-              autoplay: {
-        delay: 2500,
-        loop: true,
-     
-    }
-      
-    });
-
-
-         
-     
-   
 
 
 
-        </script>
 
+    <div id="page2" data-scroll-position="left">
+      <div class="image_container">
+
+        <img data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"
+          src="https://lh3.googleusercontent.com/pw/ABLVV84nNs5bOJE6sYwnGdSZujN09tF1nJscBDtNcjUEyq3r-5Z5i9j11I-3pzc7C3v7mlsgpd0q77tP7GHd_ja9Vp0-DvOsLZd7bc8ouZBBUyhO1PjIEO-OCRxntKHNs053JGou8NS5i7xXpuJhS4BUqCiycqCt-kOKzPLzs689_pbJueq5O3uBXr8rvEZLSih65bVlkokEa0x0nelNgeMlyGcJev46e0olrPPR92vgCm-jxn1kawGAPSB6_WBiH7nbdUWTrDeMwoXZl79XVqvZL4qx2vdqNdTzVrwdj7F-vRPIMYLrLwjS9esiHkYxhwRQGQCQ6LoSu6PXWTNtB-qNNyTW3TOk-vfg9pRUDlLOIA031RDMuKRcieku1jtbFC3veVdNaD9-PRfeDXtyL73ErBcnPQrZH5DEBXJ70mRbJQ_wMNZLGgKv00mnuondEN37xviLy_ErY7uZwcJVWdno0faxMjProOGpyvuqNjRDC2bIeKWpy48mEt_O8xLq_RQoQVr8tslz6gx5BckM23OPNLrpUGiaxc-s5zW9JcaUPV8OcRD-_SOGxv2-WcJZpwUawanzp0wJbCgmoJObYxSa6hwuyFTZExZxBGxGksky0A3q52ds-Kis59TyD4hAwHLGMSXQcSiFudXCJpbhiFPBD5hYPAxi-tbl4iZOFTJkBmoQC3D0-bhZyobrIo49RNc1VB7V3tllMmZZ_rWubN02jnGeYzEY4R7e2nyALwo5Ul8J4BFMoEG9j2K88bCZhHKzHTA9JYK1dIy0rk5Jz6PcXaPVU6DywHnctPeVqiSOA-6H-HL02ljI9wOtB00Sld_6lYK6dvHw9sBQY-gXn7LUl5nJ23hkk1wdjtyJ25fInQfAcNLmnVIfAqjI_KsL0Ad_wu8B5f1Fe2Xrrf5COpX71SboCx0=w713-h877-s-no?authuser=0"
+          alt="" srcset="">
       </div>
 
-    </main>
-  </body>
 
-  <script>
-    $(function(){
-  $("nav").load("../Components/nav.html");
- 
-});
+      <div class="image_container jcl">
+
+        <img data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"
+          src="https://lh3.googleusercontent.com/pw/ABLVV84gpp0jznNfqrm2tKhfKMDAp493W1GHpXdqBj607hmlT2HrcEe4bpzTY0J1NI7TpHFzETWr7guZfOz7bsoIVZwXWaPO4Had39D7W9hyiwTRkyNTZTB4pMVKKTi3KcdEs1RGl3CqQvdjEwcLfqm8WOz_oJmb2sVMWcokQ3AbWV6Aui-n4MG5tw1FCCBsiI5FvyGTK7W1q6h2ywr7-_M6K-iK5mtooZPbm_zHiGeuqFsPapAoN7uvOk93ZvU2z0pRq2otdwdO1nV3nLABC0qLmo0pAJxQZSnqCQCi8BnziOKn1mO9AFo5sc6eCEZFaA5e9RNkTTQ8PwjFaSZG629D5r1gUEhfTMlI6jEBkTTYN9xzxEvF9AgvdzC244OBf6FwLWCU8hgQuKFsAfW32C9IGGH8IStjfuj0VD4kEN0GGxlzIjH_uPCe6cXgpUjF_5quOwa5EPSvL07HciCpN2knrskQOvbA8_vyy-6KtkHhOypoWADaT4SWhwR-vvslDXkN8W3IJJFmirOSw35JvgN_vwL7zI3RurwWmoXzzoQGc82WqN6LkxI3tlMMvKrdAktWgS4-KfKDMNCUUm02ElISQZdoXO9ZbLYf9BjnAhsHbZaz8gZ_0MdX0iud1BxWFgBsYN-RFJv1N3Q0EYpu0KCwgAJEPwLPbSRRhXkL0FUg3f7HTuzdzAb-yWxFvHTHrXFcy68GcfHTFJrDyxle77qdLccELmjC7G1CwsO88h-tTx7ieVy27oHO9ou4gb0DMMA6HXL_qbQA602bAqQ3MpYyjQpfQLvxkOsAei4B2rpGPqpRN1X4qvXl2os91oRA8k-KWDj443WEc7yPU9ZJLEx5PnPD00iIVXOJxIBWrh5BUtBcKq73bGEZyZErbH6UKdvK6fQOka3-kurTbpIe5wC4h3sCwaw=w879-h877-s-no?authuser=0"
+          alt="" srcset="">
+      </div>
+
+
+      <div class="image_container">
+
+        <img data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"
+          src="https://lh3.googleusercontent.com/pw/ABLVV86td7YREMCjM-k7reFrCW3EETV5Zbar66elwWgmKYIvNEQL51K__f0VCmqzzqUBaRYF3w-qBCM_pEDi6Mr7KYsx5H0nL8qTyQZUUQykOfEAoBLhSbkArRXZL6XitQoTnNjiLJAKiNdKp-9Hp5OcQBTQFd6HkYeeQeZs-Us5cHnTzNia9gYMjk4usQ8tQB_4YtEc6vsBOnOIGOYUuwL6IVNET7uQalXIduSc-USUMRMmDVwzjcimow_lv_Ay8WQiXg_ARa4W3AnQoDTBi4xQ42Cr43WnRjs3AjTOUAYzrXcWhogOpt9x8ZuhEdu-EY7aKUUbq2TE3dOhU-wXOnLFE8eMhi51eMseeDHLmXpKeUAULOFsNGcIBD6g2JbWlrBy5UxU9wR_klifQGL2g9kCyljISWHT7oR69jc-RP99f_F0b-yYrtRP_7Td-vlCtk6pK6rco_Wzb1HjN5q7cZpASa-AJWK2lGdHIupO-eQHCs3s6LOaP1Bv2O9au2IGJL-hylVKwLZVtbROO4SNa0FHqldlKxuhyWAA8OU8SKJaW6oB2U0qXZfaUW9Rl7cEi17WP42vuUWlpZWOj62HD9O9NuAinwNxhOIeRQb1ercD8fOPMfm9RfKaCZO-J85FOmCaKlYfDYWi1WYzhvSr383CBP6ZXHHzcmIE1tmB0E6bhufkYl-NBxL3nIsjpnxyIcWqV5Wrg0K9WexzEOe4rs8V_NLfNLBXt-gagj0CV6_FN9e3oxisIi4cutkcNMd_k5fJUQXthYxOWKNtEMOJm7cLLCsJ9BHKJlOxJ32ot-lUAeP2vapYdwdRmdul4ZNThey71R1fIDj24oGBT-NkHJIw4j63x2qBvBktZRR4-SHIK-HqfTLHDkqVlVoBUAzFtgKZl5uNqFQW-2W9mDfN_CGwecck9rY=w702-h877-s-no?authuser=0"
+          alt="" srcset="">
+      </div>
+
+
+      <div class="image_container jcl">
+
+        <img data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"
+          src="https://lh3.googleusercontent.com/pw/ABLVV86nHTD1XR2yMFpElIKmXrX3y6YvsjxePZeE6nfZwsvXbCUZFqKhrJohIeRym7Er2auIljFelOgcQ0qq3cisRjhEcBAI2X_Q0DTL_gk0-uGSQHROf9SJcQM2qfNIqz9QwtbydezIQvmCXoClXPgF6yNHVPgpUdQonSQyDMDKGV9uHYTMy4JAqEV7fLElG1AF5FBPbbfleVA6JMKGH2NuTMzNoGpewdffjpypM69a0iD7lJydABDlXzWGRESeGiB7MNaDeCbUyf8K8qsfyQz6AzOguZrhtKaeVtA33Xtb4DGQKnvd8Dz84TgDcrIOjkCNySgeaC60clnCmG2jdVSxIdBDzyBO-q_LqGxYR-HYhnFEWKaYz6sPSw-CBd_aoKWdmKuA54WRnuZ-_pxeltfW4YfqxPZecNT_v4Qho85bMGWVb9FCTXUTSYALfPVgC6ERghC6tB2SrPiLs3KdHugH7yt36-cKlFBD80M0pfX9lF0K1WbsqFh3_gVuyl5crsA0HuIrD8uE2Ob8mRUPVh6yukG3gPhXkxoISs2YxTCIZY-73LkZ1BFE9iXSOD511VbRwRht6xsR5jqdQFH0URDQ1jcRPK4MH0MjlhGZfYDBGMyVXt2NUnmvMzcnFgjGWw4t73tHsdMkHuVgKd9eEt14A1ta_VRlrpG1vAZ9kLDqPKrCt3zISto1gHal6zgcgiWKXs4pRxxFBAJggP9ERdgpSu4vniEeskqjzJV3kcPeOqRllrcIdQJGJo6Xfe2tr6LtpaQhWR0UtiQxTxKRXSsL4ze8CQEizHck7h0vphzcJSH8GhhmsgZ87EJizoFCdB7LBVOQPWR9XpSLCsNPyjTlO4BdaYNgaCmC2fub3CO735XIyM_VY72sLZKRNBdHowjxGYt65x0QBqWi1cfEQmj1olysx4M=w439-h549-s-no?authuser=0"
+          alt="" srcset="">
+      </div>
+      <!--  -->
+
+      <div class="image_container">
+
+        <img data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"
+          src="https://lh3.googleusercontent.com/pw/ABLVV86KQRxCrzCGKw16vKstfD229ooHtg18Qp26Jf2omHGd7myWfX4hJJsBgM3cSU85DkOE0j2vJ8KW57-sGpFKzdiHh5GGZy_ks01b0VOnEaHfGIh-DqbnldJn_WBb6cecnBKLhaLhZwvJROv1aISOs81MRc1zU1QxHRzVh7oT31tRXXFVEtGvZGIHcYiL1h7KX8wE3ljpbQGefiJddZDGEFMceqogxQfavybgdwsa2r-6p-aEqOUYp-dTSF9UBW0SxzqV538jETWwuCmB-_PshtfE54mrOrBXGVdDsu3T538srKbi85-Cw--7TVXB62rjDaEtowca28NHFcSWymdx4maQn4n5-DY78tBZ5LpLz42-jLHSxsZX3RdpSnm9MPElTnyLaoYBkm_lap9jkVWNmLyMD_v8CcgCOPKwVELE1Qly14y932tsLwM8jJVA-QSmuJB7Y9LQT1-YmMD7rGmeRgqhYDGNw-4mHuQ-vZEjlJwY5culqsAu1hcyAxOt7lmh4icjxPz7bgwVj4jKrpXj_UsJsXMmm2XTLJYx2oyHVc7GqZmd4Uv9B717DztbIXwCrLRFhjOVDY8NsIUNYngFb04cP1fUe7JB9EMU-1TS7wRG8F_xDqY3UIO6z3KtQSiIVkuq3UgoPJD49HFmFognKEO8KT7-oayQ4PdatX2-mgo2U5QgEsaxKqqpPAMIdWhoOy0VyuBG_XwninzeVaGewDmWwCQlcr4HIZf7IJpIhqsKpmES4B1XtF-lE0zKh4dimSlqqyWwAKqpJfk-PA7x3iEPyRedfEw0G7f5h2Rd84yHKUQGRGSq8BVcISCJsXEU0UcKg8z22K1FonJvOSfKHOhkkOYoVd4tpf3A8zcePAJUlUFoAw9QAjIeqBUfHbaeIbJtrLkLcr8rEcijjxIDnXi_CfQ=w658-h877-s-no?authuser=0"
+          alt="" srcset="">
+      </div>
+
+
+      <div class="image_container jcl">
+
+        <img data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"
+          src="https://lh3.googleusercontent.com/pw/ABLVV84FKqSvjUAdKqTc3TqzGkrumezkbD6b6GuyLhcRyug2GEyaPCp21Klta8dGZVRQCtVfYjkGUYN7wY8LD9-Ef1XQrY5BYp01t-i_Bv9XzQBvXOdUTpyMt54vJWC-1jI-uOcFxUtpyChZEHkGx7VXqwDc9B6GHdOdVlXKOXGbYSlRIRQnL39WgSuCML1AiEJp_3iEzlcZ5pFuUiSCTPuD_obp_DEyh-NxaQCGczPM70st8xZrRhIdtZmS5LsaesrfTBtG5zXU61P-mKI1RnpxXUQP_btVu3lfvA3WFXXDsO9_0SsELTSAcEXFGlAVaR40GLXVEfjgFe9OsqSDBI9UVRX_Xl4kWayRMI4Ys0nuPoNdsn6RPqtFU5ZV0Sla-JzCyBJe2qY1yF2EBO5Uoqwp5_sy-IyINy0E0kck_Wwu8efYkJsYmiOb9qv_S3rvKr9kJce8JWno4ws7TgctmCtqqGMXjuhfwHGT5PDnoIz_7GNTlJ4XAX8PfMDoo_zeuxOcovmLQeR5E3IQcl7zuHTh60em1k5a2PDC6-RjEV_Ory2QpDarvW9M8ROFKUlOQjavP8yHOxY92bVF5IEYeRTQb7B336Hj25L1gERQimyfaULoG4CqON2AsZTI3QJTYIBRLdgP2ilJRP2U35MsZe27-g-RBFcc5CJZQWO1oiqllaYRuAXZBsJw4-43CPu81tnoYnz1gki2ajFxIyul0vmrUq7KIvbyYMd_e5iIlBX-yffEfMZlFXRkQRHwSsIXCwUEh5WOCnIRPPmNY3KyRBe1R34DKGgEZDhXrbpyJlxRrAIfIuf4W2fnzx10JtD4QAZIRSxh5fm28WI6PWX4XIx8A4TiE7AXLcOz5v3OiIaMWRdUVmHsXT-_BJ0IUP4UeVlu7ycpkGBeugxmU6MUlbpQdsziFGs=w1079-h673-s-no?authuser=0"
+          alt="" srcset="">
+      </div>
+
+
+
+      <div class="image_container">
+
+        <img data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal"
+          src="https://lh3.googleusercontent.com/pw/ABLVV84FKqSvjUAdKqTc3TqzGkrumezkbD6b6GuyLhcRyug2GEyaPCp21Klta8dGZVRQCtVfYjkGUYN7wY8LD9-Ef1XQrY5BYp01t-i_Bv9XzQBvXOdUTpyMt54vJWC-1jI-uOcFxUtpyChZEHkGx7VXqwDc9B6GHdOdVlXKOXGbYSlRIRQnL39WgSuCML1AiEJp_3iEzlcZ5pFuUiSCTPuD_obp_DEyh-NxaQCGczPM70st8xZrRhIdtZmS5LsaesrfTBtG5zXU61P-mKI1RnpxXUQP_btVu3lfvA3WFXXDsO9_0SsELTSAcEXFGlAVaR40GLXVEfjgFe9OsqSDBI9UVRX_Xl4kWayRMI4Ys0nuPoNdsn6RPqtFU5ZV0Sla-JzCyBJe2qY1yF2EBO5Uoqwp5_sy-IyINy0E0kck_Wwu8efYkJsYmiOb9qv_S3rvKr9kJce8JWno4ws7TgctmCtqqGMXjuhfwHGT5PDnoIz_7GNTlJ4XAX8PfMDoo_zeuxOcovmLQeR5E3IQcl7zuHTh60em1k5a2PDC6-RjEV_Ory2QpDarvW9M8ROFKUlOQjavP8yHOxY92bVF5IEYeRTQb7B336Hj25L1gERQimyfaULoG4CqON2AsZTI3QJTYIBRLdgP2ilJRP2U35MsZe27-g-RBFcc5CJZQWO1oiqllaYRuAXZBsJw4-43CPu81tnoYnz1gki2ajFxIyul0vmrUq7KIvbyYMd_e5iIlBX-yffEfMZlFXRkQRHwSsIXCwUEh5WOCnIRPPmNY3KyRBe1R34DKGgEZDhXrbpyJlxRrAIfIuf4W2fnzx10JtD4QAZIRSxh5fm28WI6PWX4XIx8A4TiE7AXLcOz5v3OiIaMWRdUVmHsXT-_BJ0IUP4UeVlu7ycpkGBeugxmU6MUlbpQdsziFGs=w1079-h673-s-no?authuser=0"
+          alt="" srcset="">
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <footer></footer>
+
+  </main>
+
+
+</body>
+
+<script>
+  $(function () {
+    $("nav").load("../Components/nav.html");
+    $("footer").load("../Components/footer.html");
+
+  });
 </script>
-  <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
-            integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
-            integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-        <script src="../Assets/JS/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="../JS/script2.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+  integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+  integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="../JS/script2.js"></script>
+<script src="../Assets/JS/script.js"></script>
+
 
 </html>

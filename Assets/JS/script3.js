@@ -13,6 +13,14 @@ document.querySelector('main').addEventListener('mousemove', function (dets) {
     })
 
 
+    gsap.to(blue, {
+        left: dets.x + "px",
+        top: dets.y + "px",
+  
+
+
+    })
+
 })
 
 
@@ -38,6 +46,8 @@ function page2Anim() {
 
 
         })
+
+      
 
 
     })
