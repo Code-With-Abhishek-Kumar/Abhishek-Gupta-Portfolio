@@ -16,11 +16,16 @@ nav {
     line-height: 2.6vh;
   
   }
-  #left-nav h1{
+
+  #left-nav i{
+display: none;
+  
+  }
+  .logo h1{
    
   
   }
-  #left-nav h2{
+  .logo h2{
    color: #34ac20;
    margin-left: 18px;
   
@@ -43,7 +48,7 @@ nav {
      
   
   }
-  
+
 
   footer{
   width: 100vw;
@@ -57,3 +62,153 @@ nav {
     justify-content: space-between;
     font-size: 2rem;
   }
+
+
+  
+
+
+
+
+@media screen and (max-width:500px){
+
+  nav {
+    width: 100vw;
+    height: 6vh;
+    background-color: #100202;
+    position: fixed;
+    color: white;
+   flex-direction: column;
+   justify-content: baseline;
+    display: flex;
+    z-index: 8;
+  }
+
+  nav ol{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    height: 73vh;
+    margin-top: 4vh;
+    font-family: Helvetica;
+ text-transform: uppercase;
+    justify-content: end;
+    padding: 0px 35px;
+    margin-right: 15px;
+
+}
+
+nav ol li{
+ display: block;
+
+}
+nav ol li a {
+  text-decoration: none;
+  color: white;
+}
+
+  .logo{
+    width: auto;
+    height: fit-content;
+  }
+
+  .logo h1 , h3{
+    width: fit-content;
+  }
+  #left-nav {
+    padding: 0px -6px;
+    font-size: 0.8rem;
+    line-height: 2.6vh;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+ 
+  }
+
+
+  #left-nav i {
+    display: block;
+    margin-right: 35px;
+    font-size: 2rem;
+  }
+
+  #center-nav{
+    display: none;
+opacity: 0;
+    justify-content: space-between;
+    height: 100vh;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    /* background-color: aliceblue; */
+  }
+
+  /* #right-nav{
+  display: none;
+  
+  } */
+
+
+  
+/* 
+  #left-nav {
+  display: none;
+  
+  }
+
+  #center-nav{
+    display: none;
+  }
+
+  #right-nav{
+    position: fixed;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column;
+    background-color: black; 
+    width: 100vw;
+    
+  
+  }
+
+  #right-nav i{
+    margin-right: 35px;
+    font-size: 1.5rem;
+  }
+
+  .nav-top{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+    gap: 65px;
+
+  }
+
+  .nav-bootom{
+    height: auto;
+    width: 100%;
+ background-color: #34ac20; 
+  }
+  
+  
+
+
+  #right-nav h1{
+  
+    margin-left: 4px;
+    font-size: 1.2rem;
+  }
+  #right-nav h2{
+   color: #34ac20;
+   font-size: 1.3rem;
+   margin-left: 8px;
+  
+  } 
+  */
+
+
+}
