@@ -98,6 +98,6 @@ Elmyachivement.forEach(function(dets){
 
 
 
-// document.addEventListener('contextmenu' , function(dets){
-//     dets.preventDefault()
-// })
+document.addEventListener('contextmenu' , function(dets){
+    dets.preventDefault()
+})

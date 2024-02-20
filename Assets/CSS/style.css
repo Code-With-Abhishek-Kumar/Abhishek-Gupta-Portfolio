@@ -26,6 +26,7 @@ main {
 
 #cursor {
   position: fixed;
+  pointer-events: none;
   width: 35px;
   border-radius: 50%;
   height: 35px;
@@ -282,69 +283,17 @@ z-index: 2;
   -webkit-text-stroke: 2px rgb(229, 221, 221);
 }
 
-#page4 {
+#page3 {
   height: 80vh;
   font-family: Helvetica;
+  display: none;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   gap: 65px;
   position: relative;
 
 }
 
-#page4 h5 {
-  margin: 12px 0px;
-
-}
-
-
-
-#page4 .right h2 {
-  font-size: 2rem;
-  margin: 15px 0px;
-  position: relative;
-
-}
-
-#page4 .right h2::after {
-  position: absolute;
-  top: 0;
-  left: -2%;
-  content: "";
-  width: 2px;
-  background-color: #ce0b0b;
-  height: 79px;
-}
-
-
-#page4 .left {
-  width: 50%;
-  height: 96%;
-  align-items: center;
-  display: flex;
-  justify-content: start;
-}
-
-#page4 .right {
-
-  height: 100%;
-  display: flex;
-
-  margin-left: 10%;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-}
-
-
-#page4 video {
-  height: 125px;
-  width: 100%;
-  object-fit:contain;
- border-radius: 50%;
- /* display: none; */
-
-}
 
 
 #skill-container {
@@ -485,7 +434,7 @@ z-index: 2;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
+  pointer-events: none;
   z-index: 2;
   position: fixed;
   left: 40%;
@@ -707,7 +656,7 @@ padding: 0px 0px;
   }
 
 
-  #page4 {
+  #page3 {
     height: 70vh;
 
     width: 100%;
@@ -717,14 +666,14 @@ padding: 0px 0px;
 
 }
 
-#page4 .left {
+#page3 .left {
 
   display: none;
  
 
 }
 
-#page4 .right {
+#page3 .right {
 width: 90%;
 
 
